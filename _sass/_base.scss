@@ -109,23 +109,25 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
-        border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
-            color: rgba(white, .7);
-            &:hover,
-            &:focus {
-                color: white;
-            }
+        &.header-nav {
+          background-color: transparent;
+          border-color: rgba(white, .3);
+          .navbar-header .navbar-brand {
+              color: rgba(white, .7);
+              &:hover,
+              &:focus {
+                  color: white;
+              }
+          }
+          .nav > li > a,
+          .nav > li > a:focus {
+              color: rgba(white, .7);
+              &:hover {
+                  color: white;
+              }
+          }
         }
-        .nav > li > a,
-        .nav > li > a:focus {
-            color: rgba(white, .7);
-            &:hover {
-                color: white;
-            }
-        }
-        &.affix {
+        &.affix.header-nav {
             background-color: white;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
@@ -153,9 +155,9 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    @include background-cover;
+    // @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('/img/header4.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -348,4 +350,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-

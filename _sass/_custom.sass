@@ -1,0 +1,68 @@
+$marginBottom: 30px
+
+.margin
+  margin-bottom: $marginBottom
+
+ul
+  margin: 20px 0
+  padding: 0
+  list-style-type: none
+
+nav
+  .navbar-brand
+    color: #fff
+
+  li
+    p
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 13px
+      color: #000
+      padding: 15px 10px 0 10px
+
+@media(min-width: 768px)
+  nav
+    li
+      a
+        color: #000
+
+  nav.affix-top.header-nav
+    li
+      p, a
+        color: #fff
+
+.btn-transparent
+  background: transparent
+  border: 3px solid #fff
+  color: #fff
+
+.btn-transparent.btn-xl
+  padding: 12px 27px
+
+.btn-transparent:hover, .btn-transparent:focus
+  color: #fff
+
+@media (max-width: 768px)
+  .full-xs
+    width: 100%
+    margin-bottom: 15px
+  header
+    h1
+      font-size: 30px !important
+
+.portfolio-box
+  margin: 10px
+  border: 1px solid #eee
+
+@media (max-width: 992px)
+  .portfolio-box
+    margin-bottom: 10px
+
+    .portfolio-box-caption
+      opacity: 1
+      height: 30%
+
+#services
+  .service-box
+    a
+      text-decoration: none
